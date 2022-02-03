@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Survey Form</title>
+  <meta charset="utf-8>
+</head>
+
+<body>
+  <h1 id="title">Anime Survey Form</h1>
+  <p id="description">Thank you for helping us build a better community!</p>
+  <form id="survey-form">
+    <fieldset>
+      <label id="name-label">Name
+        <input type="text" id="name" placeholder="Enter your name" required>
+      </label>
+      <label id="email-label">Email<input type="email" id="email" placeholder="Enter your email" required></label>
+      <label id="number-label">Age <i>(optional)</i><input type="number" min="10" max="99" id="number" placeholder="Age"></label>
+    </fieldset>
+    <fieldset>
+      <label>How often do you watch anime<select id="dropdown">
+          <option value="">(Select one)</option>
+          <option value="1">Daily</option>
+          <option value="2">A few times a week</option>
+          <option value="3">Every other week</option>
+          <option value="4">Once a month</option>
+        </select>
+      </label>
+      <label>How many animes have you watched?</label>
+      <label><input value="1-3" name="watched" class="inline" type="radio">1-3</label>
+      <label><input value="3-5" name="watched" class="inline" type="radio">3-5</label>
+      <label><input value="5-10" name="watched" class="inline" type="radio">5-10</label>
+      <label><input value="10+" name="watched" class="inline" type="radio">10+</label>
+    </fieldset>
+
+    <fieldset>
+      <label>What is your favorite anime? <i>(multiple picks are allowed)</i></label>
+      <label><input value="death-note" class="inline" type="checkbox">Death Note</label>
+      <label><input value="fullmetal" class="inline" type="checkbox">Fullmetal Alchemist: Brotherhood</label>
+      <label><input value="SAO" class="inline" type="checkbox">Sword Art Online</label>
+      <label><input value="one-punch-man" class="inline" type="checkbox">One Punch Man</label>
+      <label><input value="naruto" class="inline" type="checkbox">Naruto</label>
+      <label><input value="Dragon-ball" class="inline" type="checkbox">Dragon Ball</label>
+      <label><input value="hunter-x-hunter" class="inline" type="checkbox">Hunter x Hunter</label>
+      <label><input value="other" class="inline" type="checkbox">Other</label>
+      <label>If your favorite anime wasnt an option please type it here<textarea name="other" rows="3" cols"30" placeholder="Type your favorite anime here"></textarea></label>
+    </fieldset>
+    <button id="submit" type="submit" value="Submit">Submit!</button>
+  </form>
+</body>
+
+</html>
